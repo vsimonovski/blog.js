@@ -4,7 +4,7 @@ date: '2016-12-13'
 description: Where it takes a pretty in-depth knowledge of a language like C or C++ to write a full-scale program, full-scale production JavaScript can, and often does, barely scratch the surface of what the language can do.
 ---
 
-**Y**ou **D**on't **K**now **J**avaScript, is a [great book series](https://github.com/getify/You-Dont-Know-JS) by Kyle Simpson about JS core mechanisms. Unfortunately it's harsh truth for most of Web Developers.
+**Y**ou **D**on't **K**now **J**avaScript, is a [great book series](https://github.com/getify/You-Dont-Know-JS) by Kyle Simpson about JavaScript core mechanisms. Unfortunately it's harsh truth for most of Web Developers.
 
 > While JavaScript is perhaps one of the easiest languages to get up and running with, its eccentricities make solid mastery of the language a vastly less common occurrence than in many other languages. Where it takes a pretty in-depth knowledge of a language like C or C++ to write a full-scale program, full-scale production JavaScript can, and often does, barely scratch the surface of what the language can do.
 
@@ -33,7 +33,7 @@ The following built-in types are available:
 
 You can check type of variable with `typeof` operator. You can call it as `typeof(variable)` too.
 
-```js{19}
+```js{17-19}
 let a
 
 console.log(typeof a) // "undefined"
@@ -65,7 +65,7 @@ a = {
 console.log(typeof a) // "object"
 ```
 
-This probably work as you expect, but again be carefull `typeof(null)` returns object, so for example if you want to check if some variable is object you can do it like this:
+This probably work as you expect, but again, be carefull `typeof(null)` returns an object, so for an example if you want to check if some variable is an object you can do it like this:
 
 ```js
 let object = {}
@@ -101,20 +101,20 @@ ShibaInu['race'] // "Dog"
 **Objects are passed by reference, not by value.**
 
 ```js
-let A = {
+let objA = {
     prop: "Some property value";
 }
 
-let B = A; // B now "points" to A object
+let objB = objA; // objB now "points" to objA object
 
-A.prop2 = "Another property value";
+objA.prop2 = "Another property value";
 
-B.prop2; // "Another property value"
+objB.prop2; // "Another property value"
 ```
 
 ![alt text](https://blog.penjee.com/wp-content/uploads/2015/02/pass-by-reference-vs-pass-by-value-animation.gif)
 
-More informations about javcaScript objects later on.
+More informations about JavaScript objects later on.
 
 ## Arrays
 
@@ -157,7 +157,7 @@ arr.returnLast()() // "Hi!"
 
 ## Functions
 
-JavaScript implements first-class functions. This basically means that you can treat functions as any other type. You can pass them around, you can declare them inline, you can return them from other functions etc..
+JavaScript implements a first-class functions. This basically means that you can treat functions as any other type. You can pass them around, you can declare them inline, you can return them from other functions etc..
 
 Functions, as many other things in JS, are objects. So like in case with Array they can have properties too. More details about functions later on, for now here is small example:
 

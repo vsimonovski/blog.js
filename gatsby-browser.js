@@ -2,4 +2,4 @@
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import './src/utils/global.css'
+import './src/utils/global.scss'
