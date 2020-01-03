@@ -2,6 +2,7 @@
 title: YDKJS
 date: '2016-12-13'
 description: Where it takes a pretty in-depth knowledge of a language like C or C++ to write a full-scale program, full-scale production JavaScript can, and often does, barely scratch the surface of what the language can do.
+ogimage: './ydkjs.png'
 ---
 
 **Y**ou **D**on't **K**now **J**avaScript, is a [great book series](https://github.com/getify/You-Dont-Know-JS) by Kyle Simpson about JavaScript core mechanisms. Unfortunately it's harsh truth for most of Web Developers.
