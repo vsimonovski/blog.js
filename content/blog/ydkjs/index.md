@@ -319,16 +319,17 @@ The outer `( .. )` that surrounds the function is just a mechanism needed to pre
 
 Creating IIFE you also create new variable scope, so you can use IIFE to do something like this:
 
+<!-- prettier-ignore-start -->
 ```js
 var a = 42
-
-;(function IIFE() {
+(function IIFE() {
   var a = 10
   console.log(a) // 10
 })()
 
 console.log(a) // 42
 ```
+<!-- prettier-ignore-end -->
 
 IIFEs can also have return values:
 
