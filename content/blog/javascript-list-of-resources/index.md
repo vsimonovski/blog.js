@@ -30,7 +30,7 @@ Following list\* represents carefully selected resources/tutorials/articles rela
 - 🎥 [Why 0.1 + 0.2 === 0.30000000000000004](https://www.youtube.com/watch?v=wPBjd-vb9eI) - IEEE754 standard in JavaScript explained
 - 📃 [33 Concepts Every JavaScript Developer Should Know](https://github.com/leonardomso/33-js-concepts) - Really comprehensive list of resources.
 - 📃 [Awesome Javascript](https://github.com/sorrycc/awesome-javascript) - A collection of awesome browser-side JavaScript libraries, resources and shiny things.
-- 📃 [Learny/Javascript](https://github.com/zsevic/learny/tree/gh-pages/javascript) - Great friend of mine [@zsevic](https://github.com/zsevic) has similar list that is definitely worth taking a look
+- 📃 [Learny/Javascript](https://sevic.me/learny/javascript) - Great friend of mine [@zsevic](https://github.com/zsevic) has similar list that is definitely worth taking a look
 - 🎥 [cssgrid.io](https://cssgrid.io/) - free css grid tutorial by Wes Bos
 - 🎥 [flexbox.io](https://flexbox.io/) - free flexbox tutorial by Wes Bos
 - 🎥💸 [Wes Bos Courses](https://wesbos.com/courses/) - one of premium content creators I respect the most, I have watched almost all of his premium course and every single of them was a game changer.

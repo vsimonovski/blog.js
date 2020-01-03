@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `blog.js`,
     author: `Vladimir Simonovski`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Personal Blog`,
+    siteUrl: `https://blog.vsimonovski.me/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: ``,
     },
   },
   plugins: [
