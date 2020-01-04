@@ -2,7 +2,7 @@
 title: YDKJS
 date: '2016-12-13'
 description: Where it takes a pretty in-depth knowledge of a language like C or C++ to write a full-scale program, full-scale production JavaScript can, and often does, barely scratch the surface of what the language can do.
-ogimage: './ydkjs.png'
+ogimage: './coverImage.png'
 ---
 
 **Y**ou **D**on't **K**now **J**avaScript, is a [great book series](https://github.com/getify/You-Dont-Know-JS) by Kyle Simpson about JavaScript core mechanisms. Unfortunately it's harsh truth for most of Web Developers.
@@ -66,7 +66,7 @@ a = {
 console.log(typeof a) // "object"
 ```
 
-This probably work as you expect, but again, be carefull `typeof(null)` returns an object, so for an example if you want to check if some variable is an object you can do it like this:
+This probably work as you expect, but again, be careful `typeof(null)` returns an object, so for an example if you want to check if some variable is an object you can do it like this:
 
 ```js
 let object = {}
@@ -115,7 +115,7 @@ objB.prop2; // "Another property value"
 
 ![alt text](https://blog.penjee.com/wp-content/uploads/2015/02/pass-by-reference-vs-pass-by-value-animation.gif)
 
-More informations about JavaScript objects later on.
+More information about JavaScript objects later on.
 
 ## Arrays
 
@@ -182,7 +182,7 @@ You can compare values with one of following operators:
 
 Result of any comparison is boolean value, true or false. Main difference between `==` and `===` is coercion. `==` allow coercion and `===` don't.
 
-It's handy to know what evaulates to true and false before comparing values.
+It's handy to know what evaluates to true and false before comparing values.
 
 Falsy values:
 
@@ -243,9 +243,9 @@ bar()
 console.log(a) // 42
 ```
 
-So `function a()` is hoisted on top of function `function bar()`, then we give it a value of 23 so it becomes a number, and finally we return it. Because of this behaviour the global `a` variable stays unchanged.
+So `function a()` is hoisted on top of function `function bar()`, then we give it a value of 23 so it becomes a number, and finally we return it. Because of this behavior the global `a` variable stays unchanged.
 
-When you declare a variable it's availible anywhere in that scope. JavaScript used to have only function scope, meaning creating function creates new scope. ES6 changed that introducing the `let` keyword, using `let` one can declare block scope.
+When you declare a variable it's available anywhere in that scope. JavaScript used to have only function scope, meaning creating function creates new scope. ES6 changed that introducing the `let` keyword, using `let` one can declare block scope.
 
 ```js
 function bScope() {
@@ -270,7 +270,7 @@ fScope() // 5
 
 ## Strict mode
 
-ES5 added "strict mode" to the language. Strict mode tightens the rules for certain behaviours. In general using strict mode, your code will become "safer place", this doesn't mean your code will become error proof or perfect, but it will be one step closer to that.
+ES5 added "strict mode" to the language. Strict mode tightens the rules for certain behaviors. In general using strict mode, your code will become "safer place", this doesn't mean your code will become error proof or perfect, but it will be one step closer to that.
 
 ```js
 function foo() {
@@ -360,7 +360,7 @@ let sumES6 = x => {
 console.log(sumES6(2)(3)) // 5
 ```
 
-If you are not familiar with ES6 arrow functions, here is equialent ES5 example:
+If you are not familiar with ES6 arrow functions, here is equivalent ES5 example:
 
 ```js
 let sumES5 = function(x) {
@@ -384,16 +384,16 @@ Consider the example:
 function Employee() {
   let name, surname
 
-  function returnSallary(nm, srnm) {
+  function returnSalary(nm, srnm) {
     name = nm
     surname = srnm
 
     // connect to a database
-    // return sallary or smth. simillar here ...
+    // return salary or smth. similar here ...
   }
 
   let publicAPI = {
-    sallary: returnSallary,
+    salary: returnSalary,
   }
 
   return publicAPI
@@ -402,10 +402,10 @@ function Employee() {
 // create a `Employee` module instance
 let john = Employee()
 
-john.sallary('John', 'Doe')
+john.salary('John', 'Doe')
 ```
 
-So, the `publicAPI` object is returned after Employee is invoked, `john` will have acess to sallary property of that object, that will again return inner returnSallary function.
+So, the `publicAPI` object is returned after Employee is invoked, `john` will have access to sallary property of that object, that will again return inner returnSallary function.
 
 ### this keyword
 

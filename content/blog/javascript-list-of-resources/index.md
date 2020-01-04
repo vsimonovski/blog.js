@@ -2,6 +2,7 @@
 title: Holy Grail of JavaScript resources
 date: '2020-01-04'
 description: Handcrafted list of awesome resources to improve JavaScript knowledge.
+ogimage: './coverImage.jpg'
 ---
 
 Following list\* represents carefully selected resources/tutorials/articles related to JavaScript which can vastly help clarifying confusing topics or improve JavaScript knowledge in general.
