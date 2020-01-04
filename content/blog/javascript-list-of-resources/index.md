@@ -5,9 +5,9 @@ description: Handcrafted list of awesome resources to improve JavaScript knowled
 ogimage: './coverImage.jpg'
 ---
 
-Following list\* represents carefully selected resources/tutorials/articles related to JavaScript which can vastly help clarifying confusing topics or improve JavaScript knowledge in general.
+Following list\* represents carefully selected resources/tutorials/articles related to JavaScript which can vastly help with clarification of confusing topics or improve JavaScript knowledge in general.
 
-## Legend:
+## Legend
 
 📚 - book
 
@@ -19,10 +19,10 @@ Following list\* represents carefully selected resources/tutorials/articles rela
 
 ---
 
-## Resources:
+## Resources
 
 - 📚 [YDKJS](https://github.com/getify/You-Dont-Know-JS) - I told everything in my [previous blog post](/ydkjs).
-- 📃 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Built by Mozilla, from beginner to advanced.
+- 📃 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Built by Mozilla, suitable both for complete beginners and industry experts.
 - 💸🎥 [JavaScript: Understanding the Weird Parts](https://www.youtube.com/watch?v=Bv_5Zv5c-Ts) - Course by Tony Alicea, first 3.5hrs are freely available on YouTube
 - 📃 [Visualized prototypal inheritance](https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co) - Visualization is awesome!
 - 🎥 [\_\_proto\_\_ vs prototype](https://www.youtube.com/watch?v=DqGwxR_0d1M&) - Great explanation by [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q), I can recommend his whole yt channel.
@@ -36,10 +36,24 @@ Following list\* represents carefully selected resources/tutorials/articles rela
 - 🎥 [flexbox.io](https://flexbox.io/) - free flexbox tutorial by Wes Bos
 - 🎥💸 [Wes Bos Courses](https://wesbos.com/courses/) - one of premium content creators I respect the most, I have watched almost all of his premium course and every single of them was a game changer.
 
-## Stay up to date:
+## Web Dev YouTube channels
+
+- [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
+- [Dev Ed](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)
+- [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+- [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA)
+- [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
+
+## Miscellaneous
+
+- [Web Gems](https://webgems.io/) - Webgems is a goto place for devs and designers to find new resources and more
+- [CSS Tricks](https://css-tricks.com/) - Plenty of advanced css tutorials
+- [Good UI/UX](https://codepen.io/tyrellrummage/pen/ZJPXgy) - Practical tips to make UI/UX better
+
+## Stay up to date
 
 - [r/webdev](https://reddit.com/r/webdev) - Subreddit dedicated to Web Dev, you can easily find subreddit dedicated to your favorite framework also such as [r/reactjs](https://www.reddit.com/r/reactjs/) or [r/angular2](https://www.reddit.com/r/Angular2/).
-- [DevTo](https://dev.to/) - Daily dose of really good, mostly web dev, related articles.
+- [DevTo](https://dev.to/) - Daily dose of really good, mostly web dev related, articles.
 - [HackerNoon](https://hackernoon.com/) - -||-
 - [JavaScript Weekly](https://javascriptweekly.com/) - the best JavaScript related newsletter out there.
 - [Syntax.fm](https://syntax.fm/) - one of the best WebDev podcasts by Wes Bos and Scott Tolinski.
