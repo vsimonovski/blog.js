@@ -33,7 +33,9 @@ Following list\* represents carefully selected resources/tutorials/articles rela
 - 📃 [Awesome Javascript](https://github.com/sorrycc/awesome-javascript) - A collection of awesome browser-side JavaScript libraries, resources and shiny things.
 - 📃 [Learny/Javascript](https://sevic.me/learny/javascript) - Great friend of mine [@zsevic](https://github.com/zsevic) has similar list that is definitely worth taking a look
 - 🎥 [cssgrid.io](https://cssgrid.io/) - free css grid tutorial by Wes Bos
+- 📃 [codepip.com/games/grid-garden/](https://codepip.com/games/grid-garden/) - free CSS Grid game by https://codepip.com/ 
 - 🎥 [flexbox.io](https://flexbox.io/) - free flexbox tutorial by Wes Bos
+- 📃 [flexboxfroggy.com/](https://flexboxfroggy.com/) - free flexbox game by https://codepip.com/
 - 🎥💸 [Wes Bos Courses](https://wesbos.com/courses/) - one of premium content creators I respect the most, I have watched almost all of his premium course and every single of them was a game changer.
 
 ## Web Dev YouTube channels
@@ -49,6 +51,8 @@ Following list\* represents carefully selected resources/tutorials/articles rela
 - [Web Gems](https://webgems.io/) - Webgems is a goto place for devs and designers to find new resources and more
 - [CSS Tricks](https://css-tricks.com/) - Plenty of advanced css tutorials
 - [Good UI/UX](https://codepen.io/tyrellrummage/pen/ZJPXgy) - Practical tips to make UI/UX better
+- [codewars.com](https://www.codewars.com/) - Thousands of programming challenges in different programming languages
+
 
 ## Stay up to date
 
