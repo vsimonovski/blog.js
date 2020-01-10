@@ -1,8 +1,8 @@
 ---
 title: Get hooked on Git hooks
-date: '2020-01-08'
-description: Learn how to automate your daily Git workflow with Git Hooks, Commitizen and gitmoji.
-ogimage: './in_case_of_fire.jpg'
+date: '2020-01-13'
+description: Learn how to enhance your daily Git workflow with Git Hooks.
+ogimage: './coverImage.png'
 ---
 
 If you're like me, you're crazy over automating boring stuff. One of the things I got hooked on (pun intended) during the last year, and which helps in that automation process, is Git Hooks. If you haven't heard of Git Hooks and want to see some cool ways of improving your daily git workflow stay tuned!
@@ -44,8 +44,8 @@ You're now able to include hook definition inside `package.json` like this:
 {
   // ...
   "husky": {
-    "pre-commit": "yarn run someCoolCustomScript",
-    "commit-msg": "yarn run evenCoolerCustomScript"
+    "pre-commit": "<cool-script>",
+    "commit-msg": "<even-cooler-script>"
   }
   // ...
 }
@@ -260,7 +260,7 @@ Much cleaner right? This commits follow [Conventional Commit](https://www.conven
 In general the pattern that commit message should follow mostly look like this:
 
 ```bash
-type(scope?): subject  #scope is optional:
+type(scope?): subject  #scope is optional
 ```
 
 Some of common types are:
@@ -297,7 +297,7 @@ Of course we need to create another config file, `.commitlintrc.json` last one I
 
 Now we can extend hooks property inside `package.json`:
 
-```json
+```json{6}
 // package.json
     // ...
     "husky": {
@@ -313,9 +313,21 @@ Now we can extend hooks property inside `package.json`:
 
 ---
 
-Let me just quickly recap what we learned today, git hooks will take care of:
+Quick recap of what we learned today:
+
+`lint-staged` inside the `pre-commit` hook will take care of:
 
 - formatting all staged files via Prettier.
 - check all staged `.js` files for syntax errors via Eslint
 - check if relevant `.spec.js` unit test files are failing before we commit via Jest
+
+`commitlint` inside the `commit-msg` hook will take care of:
+
 - enforce commit message to follow Conventional Commit rules via Commitlint.
+
+---
+
+## See also
+
+- [cz-cli](https://github.com/commitizen/cz-cli) - The commitizen command line utility.
+- [husky-sandbox](https://github.com/vsimonovski/husky-sandbox) - Code samples from this post.
