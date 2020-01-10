@@ -67,13 +67,46 @@ hr {
   padding-right: 0;
 }
 
-/* label for js code snippets */
-.gatsby-highlight pre[class='language-js']::before {
-  content: 'js';
-  background: rgb(247, 223, 30);
-  color: black;
+/* labels for code snippets */
+@mixin label-position($label-name, $background, $color) {
+  content: $label-name;
+  background: $background;
+  color: $color;
   top: 0;
   right: 0;
   padding: 5px;
   position: absolute;
+}
+
+.gatsby-highlight pre[class='language-js']::before {
+  @include label-position('js', rgb(247, 233, 30), black);
+}
+
+.gatsby-highlight pre[class='language-bash']::before {
+  @include label-position('bash', #3498db, #fff);
+}
+
+.gatsby-highlight pre[class='language-json']::before {
+  @include label-position('json', #fd79a8, #fff);
+}
+
+.command-line-prompt > span:before {
+  color: #999;
+  content: ' ';
+  display: block;
+  padding-right: 0.8em;
+}
+
+/* Prompt for all users */
+.command-line-prompt > span[data-user]:before {
+  content: '$';
+}
+
+/* Prompt for root */
+// .command-line-prompt > span[data-user='root']:before {
+//   content: '[' attr(data-user) '@' attr(data-host) '] #';
+// }
+
+.command-line-prompt > span[data-prompt]:before {
+  content: attr(data-prompt);
 }

@@ -52,7 +52,7 @@ const Bio = () => {
       />
       <p>
         Personal blog by{' '}
-        <a href={`https://vsimonovski.me`}>Vladimir Simonovski</a> .
+        <a href={`https://vsimonovski.me`}>Vladimir Simonovski</a>
         <br />
         Converts {'☕️'} into code.
       </p>
