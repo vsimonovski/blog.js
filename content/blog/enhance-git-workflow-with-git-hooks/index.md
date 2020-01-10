@@ -1,6 +1,6 @@
 ---
 title: Get hooked on Git hooks
-date: '2020-01-13'
+date: '2020-01-11'
 description: Learn how to enhance your daily Git workflow with Git Hooks.
 ogimage: './coverImage.png'
 ---
