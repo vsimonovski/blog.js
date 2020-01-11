@@ -11,7 +11,7 @@ If you're like me, you're crazy over automating boring stuff. One of the things 
 
 ## What are Git Hooks? 🎣
 
-[This page](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) from Git documentation sums it up pretty well but in general Git Hooks are Gits answer on firing custom event when some Git related action occurs. We will focus on the client-side `pre-commit` and `commit-msg` hooks today but following options are available:
+[This page](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) from Git documentation sums it up pretty well but in general Git Hooks are Gits answer on firing custom event when some Git related action occurs. We will focus on client-side `pre-commit` and `commit-msg` hooks today but following options are available:
 
 - Client-Side Hooks
 
@@ -53,13 +53,13 @@ You're now able to include hook definition inside `package.json` like this:
 
 ## pre-commit
 
-In most of the cases we want to run the `pre-commit` hook only on staged files, [lint-staged](https://github.com/okonet/lint-staged) library helps us with that:
+In most of cases we want to run the `pre-commit` hook only on staged files, [lint-staged](https://github.com/okonet/lint-staged) library helps us with that:
 
 ```bash{promptUser: vsimonovski}
 yarn add lint-staged -D
 ```
 
-After we've added the `lint-staged` we're able to do something like this inside `package.json`:
+After we've added the `lint-staged` we're able to do something like this inside a `package.json`:
 
 ```json{5,8-13}
 // package.json
@@ -86,7 +86,7 @@ First let's add [prettier](https://prettier.io/) - hope you've heard of it since
 yarn add prettier -D
 ```
 
-We can pass arguments to prettier script directly but I'm fan of config files, so we'll create a `.prettierrc` file in the project root directory:
+We can pass arguments to the prettier script directly but I'm fan of config files, so we'll create a `.prettierrc` file in the project root directory:
 
 ```json
 // .prettierrc
@@ -118,7 +118,7 @@ Time to lint our `.js` files, we can easily do that with [eslint](https://github
 yarn add eslint -D
 ```
 
-We will define config file again, this time `eslintrc.json`:
+We will define a config file again, this time the `eslintrc.json`:
 
 ```json
 // eslintrc.json
@@ -285,7 +285,7 @@ First we want to install [commitlint](https://github.com/conventional-changelog/
 yarn add -D @commitlint/{config-conventional,cli}
 ```
 
-Of course we need to create another config file, `.commitlintrc.json` last one I promise! 🤞
+Of course we need to create another config file, `.commitlintrc.json`, the last one I promise! 🤞
 
 ```json
 // .commitlintrc.json
@@ -295,7 +295,7 @@ Of course we need to create another config file, `.commitlintrc.json` last one I
 }
 ```
 
-Now we can extend hooks property inside `package.json`:
+Now we can extend hooks property inside the `package.json`:
 
 ```json{6}
 // package.json
