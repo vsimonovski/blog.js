@@ -34,7 +34,7 @@ If you're like me, you're crazy over automating boring stuff. One of the things 
 Since Git hooks don't have the best out of the box experience, we'll use the [Husky](https://github.com/typicode/husky) library to make stuff easier:
 
 ```bash{promptUser:$}
-yarn add husky -D
+yarn add husky --dev
 ```
 
 You're now able to include hook definition inside `package.json` like this:
@@ -56,7 +56,7 @@ You're now able to include hook definition inside `package.json` like this:
 In most of cases we want to run the `pre-commit` hook only on staged files, [lint-staged](https://github.com/okonet/lint-staged) library helps us with that:
 
 ```bash{promptUser: vsimonovski}
-yarn add lint-staged -D
+yarn add lint-staged --dev
 ```
 
 After we've added the `lint-staged` we're able to do something like this inside a `package.json`:
@@ -83,7 +83,7 @@ Now when we know the basics, it's time to start adding scripts that will help ou
 First let's add [prettier](https://prettier.io/) - hope you've heard of it since it's the best thing that happened to code formatting in a while.
 
 ```bash{promptUser:$}
-yarn add prettier -D
+yarn add prettier --dev
 ```
 
 We can pass arguments to the prettier script directly but I'm fan of config files, so we'll create a `.prettierrc` file in the project root directory:
@@ -115,7 +115,7 @@ Prettier will format all staged files on the commit so they follow a code conven
 Time to lint our `.js` files, we can easily do that with [eslint](https://github.com/eslint/eslint).
 
 ```bash{promptUser:$}
-yarn add eslint -D
+yarn add eslint --dev
 ```
 
 We will define a config file again, this time the `eslintrc.json`:
@@ -158,8 +158,8 @@ We need to define a special rule that will be triggered for `.js` files only. `e
 As the final step I'll show you how to run relevant unit tests (relevant to committed files) and prevent commit if some of them are failing.
 
 ```bash{promptUser: $}
-yarn add jest -D
-yarn add eslint-plugin-jest -D
+yarn add jest --dev
+yarn add eslint-plugin-jest --dev
 ```
 
 We should add previously installed jest plugin to our eslint config file so we eliminate eslint errors on `.spec.js` files.
@@ -282,7 +282,7 @@ First we want to install [commitlint](https://github.com/conventional-changelog/
 
 ```bash{userPrompt:$}
 # install commitlint cli and conventional config
-yarn add -D @commitlint/{config-conventional,cli}
+yarn add --dev @commitlint/{config-conventional,cli}
 ```
 
 Of course we need to create another config file, `.commitlintrc.json`, the last one I promise! 🤞
