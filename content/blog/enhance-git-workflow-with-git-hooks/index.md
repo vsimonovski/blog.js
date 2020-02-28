@@ -5,6 +5,8 @@ description: Learn how to enhance your daily Git workflow with Git Hooks.
 ogimage: './coverImage.png'
 ---
 
+> ##### Last updated: 28.02.2020
+
 If you're like me, you're crazy over automating boring stuff. One of the things I got hooked on (pun intended) during the last year, and which helps in that automation process, is Git Hooks. If you haven't heard of Git Hooks and want to see some cool ways of improving your daily git workflow stay tuned!
 
 ![essential git rules](in_case_of_fire.jpg)
@@ -44,8 +46,10 @@ You're now able to include hook definition inside `package.json` like this:
 {
   // ...
   "husky": {
-    "pre-commit": "<cool-script>",
-    "commit-msg": "<even-cooler-script>"
+    "hooks": {
+      "pre-commit": "<cool-script>",
+      "commit-msg": "<even-cooler-script>"
+    }
   }
   // ...
 }
@@ -105,7 +109,7 @@ Prettier will format all staged files on the commit so they follow a code conven
 {
   // ...
   "lint-staged": {
-    "*.{js,md,css,scss,html}": ["prettier --write", "git add"]
+    "*.{js,md,css,scss,html}": ["prettier --write"]
   }
 }
 ```
@@ -147,8 +151,8 @@ We need to define a special rule that will be triggered for `.js` files only. `e
 {
   // ...
   "lint-staged": {
-    "*.{js,md,css,scss,html}": ["prettier --write", "git add"],
-    "*.js": ["eslint --fix", "git add"]
+    "*.{js,md,css,scss,html}": ["prettier --write"],
+    "*.js": ["eslint --fix"]
   }
 }
 ```
@@ -192,8 +196,8 @@ Now extend `lint-staged` script:
 {
   // ...
   "lint-staged": {
-    "*.{js,md,css,scss,html}": ["prettier --write", "git add"],
-    "*.js": ["eslint --fix", "git add", "jest --bail --findRelatedTests"]
+    "*.{js,md,css,scss,html}": ["prettier --write"],
+    "*.js": ["eslint --fix", "jest --bail --findRelatedTests"]
   }
 }
 ```
