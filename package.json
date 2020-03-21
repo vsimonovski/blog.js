@@ -39,7 +39,7 @@
     "typography-theme-github": "0.16.19"
   },
   "devDependencies": {
-    "prettier": "1.19.1"
+    "prettier": "2.0.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
