@@ -899,6 +899,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.9.6":
+  version "7.9.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
+  integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.9.5":
   version "7.9.5"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.9.5.tgz#aba82195a39a8ed8ae56eacff72cf2bda551a7c3"
@@ -5957,6 +5964,15 @@ gatsby-core-utils@^1.2.0:
     configstore "^5.0.1"
     node-object-hash "^2.0.0"
 
+gatsby-core-utils@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.2.1.tgz#9d5e89d0cf7b9e5d7d77a9dcb47071684f68ffd5"
+  integrity sha512-uyXgjvKdzfJ0yB8oTYmBjMUqM0AACx7aA8Ioubn6k/51C4tE5+LzrG/iG42di2UaTIbcBj6vcwrvRosNKWeeBQ==
+  dependencies:
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    node-object-hash "^2.0.0"
+
 gatsby-graphiql-explorer@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-0.4.0.tgz#1efe626ba7406f0f39784d0d971e3d27b305644c"
@@ -5964,12 +5980,12 @@ gatsby-graphiql-explorer@^0.4.0:
   dependencies:
     "@babel/runtime" "^7.9.2"
 
-gatsby-image@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.4.0.tgz#25bfefed7a046184c44cf2cb5edd2a03be822594"
-  integrity sha512-VkGZ5SiIi0eC1tt45rIWqu19ZA2P1lMmNgCIqM4AK4q+ib1x0WhiGOeIEsIYk7udlfLXEy7A0uzadsv8EZSy/w==
+gatsby-image@2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.4.1.tgz#4177db97047e6b0203e2c763226bddd08ae28b76"
+  integrity sha512-WtEnVLLY+XtMb/KXWsa/nzktft1u4Ajo6y30Gy7hqFFu64muNUtPOC0UVUOsEIqrBBh8JWtyPJk6IzMaU6qA/A==
   dependencies:
-    "@babel/runtime" "^7.9.2"
+    "@babel/runtime" "^7.9.6"
     object-fit-images "^3.2.4"
     prop-types "^15.7.2"
 
@@ -5996,32 +6012,32 @@ gatsby-page-utils@^0.2.0:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-feed@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.5.0.tgz#5bdaa2427413c5ec00b2b14ed7c96483eade5c07"
-  integrity sha512-cdZq/u49f3RAH8iaZoUSV4W/naYFAWQETjnQmaEQUPzZoChUFV4gaFgoJlR7LypmFyOlU15RAapcNW5lGZ910A==
+gatsby-plugin-feed@2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.5.1.tgz#dad412c2c0455342849ddd51c8b228c8747d5fef"
+  integrity sha512-pt3sQBIgMVhKkJ+oNpYa4D2VJUfJkvjjpPVv+hpYeVsUmTpycDL1eZBVxm91OGn8qppzrwKGnmaT8R6ri0qaag==
   dependencies:
-    "@babel/runtime" "^7.9.2"
+    "@babel/runtime" "^7.9.6"
     "@hapi/joi" "^15.1.1"
     fs-extra "^8.1.0"
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-google-analytics@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.0.tgz#d5258606117abd6bded2a678ba9f7661b370e72f"
-  integrity sha512-ekXMjLpkoRT6eYC8eOEOhSDLsSBPBsZ6JQydvcmDqy/cCgc+B66icPlqd4G/Lst13Ede2z2cOMuntEsEXf6CvA==
+gatsby-plugin-google-analytics@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.1.tgz#c86a4c9c31a3ad51123cbf1508e629072a7e1c5a"
+  integrity sha512-2dfaWVxAScwMMs00g5QJ4vHHOmj9i/3MWeC273zjpC8IW35IXw/ypcDg+O7Kh+Q/Xwok1pS+c+LREic8E08iYQ==
   dependencies:
-    "@babel/runtime" "^7.9.2"
+    "@babel/runtime" "^7.9.6"
     minimatch "3.0.4"
 
-gatsby-plugin-manifest@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.1.tgz#57381d3cc2d3b8aaa0d40bfcb7595323490f8708"
-  integrity sha512-OdpqwRdhJJn/BtwWBqRbNllIbNAFAHF1ntkZQqi7LvvaUeSdeKewi7IhYRab6O/fAZ5oQsLq1DWVjpyLEt0czg==
+gatsby-plugin-manifest@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.2.tgz#0a9605a778a8e30ce047b9b3701031b9bde61d6b"
+  integrity sha512-G6MB1/Me4waG/z3Aj1GEqXCfY/yftyMLKp8g83uGvuBDtgLGN5unVgYqdmKAyBFQTvczsUghZ7jBrApHeaTn4w==
   dependencies:
-    "@babel/runtime" "^7.9.2"
-    gatsby-core-utils "^1.2.0"
+    "@babel/runtime" "^7.9.6"
+    gatsby-core-utils "^1.2.1"
     semver "^5.7.1"
     sharp "^0.25.1"
 
