@@ -6,5 +6,8 @@
       "automerge": true,
       "requiredStatusChecks": null
     }
+  ],
+  "schedule": [
+    "after 10pm on Friday"
   ]
 }
